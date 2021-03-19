@@ -1,0 +1,70 @@
+{
+  "Home": [
+    {
+      "title": "Zuhause",
+      "svg": "HiOutlineHome",
+      "description": "Stadtwohnung, 154 m2",
+      "details": [
+        "2 Schlafzimmer",
+        "1 Wohnzimmer",
+        "1 voll ausgestattete Küche",
+        "2 Badezimmer mit Toiletten",
+        "1 Büro"
+      ]
+    },
+    {
+      "title": "Haushalt",
+      "details": [
+        "Ältere Menschen leben alleine",
+        "Regelmäßige Besuche von Familienmitgliedern",
+        "1 Hund"
+      ]
+    }
+  ],
+  "Accomodation": [
+    {
+      "title": "Unterkunft",
+      "description": "Inhouse-Wohnen",
+      "details": [
+        "1 Schlafzimmer, 18m2, Balkon",
+        "Doppelbett",
+        "Privates Badezimmer mit Badewanne"
+      ],
+      "moreDetails": [
+        "Internet WLAN",
+        "Heimcomputer verfügbar"
+      ]
+    },
+    {
+      "title": "Bevorzugte Aktivitäten",
+      "details": [
+        "Kartenspiele",
+        "Schreiben",
+        "Wandern in der Natur",
+        "lesen",
+        "Fernsehen"
+      ]
+    }
+  ],
+  "Location": [
+    {
+      "title": "Der Standort",
+      "details": [
+        "44263 Dortmund, Deutschland",
+        "Großstadt (+100.000 Einwohner)"
+      ]
+    },
+    {
+      "title": "Entfernung",
+      "details": [
+        "Supermarkt unter 500m",
+        "Apotheke unter 1 km",
+        "Park oder Wald unter 500m"
+      ],
+      "moreDetails": [
+        "Führerschein B erforderlich",
+        "Auto verfügbar"
+      ]
+    }
+  ]
+}

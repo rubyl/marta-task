@@ -1,0 +1,70 @@
+{
+  "Home": [
+    {
+      "title": "Home",
+      "svg": "HiOutlineHome",
+      "description": "City Apartment, 154 m2",
+      "details": [
+        "2 Bedrooms",
+        "1 Lviing-room",
+        "1 Fully-equiped Kitchen",
+        "2 Bathrooms with Toilets",
+        "1 Office"
+      ]
+    },
+    {
+      "title": "Household",
+      "details": [
+        "Elderly Living Alone",
+        "Regular visits from family",
+        "1 Pet dog"
+      ]
+    }
+  ],
+  "Accomodation": [
+    {
+      "title": "Accomodation",
+      "description": "In-house living",
+      "details": [
+        "1 Bedroom, 18m2, Balcony",
+        "Double bed",
+        "Private bathroom with tub"
+      ],
+      "moreDetails": [
+        "Internet WLAN",
+        "Home computer available"
+      ]
+    },
+    {
+      "title": "Preferred activities",
+      "details": [
+        "Card games",
+        "writing",
+        "walking in nature",
+        "reading",
+        "watching TV"
+      ]
+    }
+  ],
+  "Location": [
+    {
+      "title": "The Location",
+      "details": [
+        "44263 Dortmund, Germany",
+        "Large city (+100,000 inhab)"
+      ]
+    },
+    {
+      "title": "Distance",
+      "details": [
+        "Supermarket under 500m",
+        "Pharmacy under 1Km",
+        "Park or forest under 500m"
+      ],
+      "moreDetails": [
+        "Driving license B required",
+        "Car available"
+      ]
+    }
+  ]
+}

@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import data from './data.json'
+import Section from './components/Section'
+import { Container, Card, Row, Form, Image } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
-function App() {
+const App = () => {
+  const { t, i18n } = useTranslation();
+  let [selectedOption, setSelectedOption] = useState("en")
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.id)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container className="p-3">
+      <Row className="mb-2 justify-content-center" ><Image src="assets/logo.jpg" /></Row>
+      <Form.Row className="justify-content-center">
+        <Form.Group onChange={(event) => i18n.changeLanguage(event.target.id)}>
+          <Form.Check
+            inline
+            type="radio"
+            label="English"
+            name="languages"
+            id="en"
+            checked={selectedOption === 'en'}
+            onChange={handleOptionChange}
+          />
+          <Form.Check
+            inline
+            type="radio"
+            label="Deutsch"
+            name="languages"
+            id="de"
+            checked={selectedOption === 'de'}
+            onChange={handleOptionChange}
+          />
+        </Form.Group>
+      </Form.Row>
+      <Card className="p-3 shadow mb-5 bg-white">
+        <Card.Body>
+          <Card.Title className="mb-4">{t('heading:title', "HOME AND AREA")}</Card.Title>
+          <Row>
+            <Section data={data} />
+          </Row>
+        </Card.Body>
+      </Card>
+    </Container>
+  )
 }
 
 export default App;

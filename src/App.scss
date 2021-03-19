@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/bootstrap";
+
+.card img {
+  width: 100%;
+  border-radius: 1.0rem;
+}
+
+ul {
+  padding-inline-start: 0;
+  li {
+    list-style: none;
+  }
+}
+
+svg {
+  vertical-align: text-bottom !important;
+  color: #6867f3;
+  margin: 0px 5px 1px 0px;
+}
+
+.h5 {
+  color: #6867f3;
+}
+
+h5 {
+  color: rgb(44, 61, 89)
+}
+
+.card {
+  border-radius: 1.0rem !important;
+}
