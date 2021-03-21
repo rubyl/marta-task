@@ -3,6 +3,7 @@ import data from './data.json'
 import Section from './components/Section'
 import { Container, Card, Row, Form, Image } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import './App.scss';
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -14,11 +15,11 @@ const App = () => {
 
   return (
     <Container className="p-3">
-      <Row className="mb-2 justify-content-center" ><Image src="assets/logo.jpg" /></Row>
+      <Row className="mb-2 justify-content-center" ><Image src="assets/logo.jpg" alt="Marta Logo"/></Row>
       <Form.Row className="justify-content-center">
         <Form.Group onChange={(event) => i18n.changeLanguage(event.target.id)}>
           <Form.Check
-            inline
+            className="form-check-inline"
             type="radio"
             label="English"
             name="languages"
@@ -27,7 +28,7 @@ const App = () => {
             onChange={handleOptionChange}
           />
           <Form.Check
-            inline
+            className="form-check-inline"
             type="radio"
             label="Deutsch"
             name="languages"
